@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     android:layout_marginTop="16dp"
+    android:id="@+id/weight222">
+
+    <TextView
+        android:id="@+id/todayday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textlogged"
+        android:layout_alignRight="@+id/textlogged"
+        android:layout_below="@+id/textlogged"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/goal23"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textlogged"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        
+        android:fontFamily="sans-serif-light"
+        android:text="@string/goal22"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#1E88E5"
+        android:textSize="27dp" />
+
+    <TextView
+        android:id="@+id/ch0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/todayday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/goal24"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar1"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/goal25"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ProgressBar01"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/goal26"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="3dp"
+        android:layout_alignLeft="@+id/ch1"
+        android:layout_alignRight="@+id/ch1"
+        android:layout_below="@+id/ch0"
+        android:layout_margin="5dp" />
+
+    <ProgressBar
+        android:id="@+id/ProgressBar01"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:layout_alignLeft="@+id/ch1"
+        android:layout_alignRight="@+id/ch1"
+        android:layout_below="@+id/ch1"
+        android:layout_margin="5dp"
+        android:layout_marginTop="15dp" />
+
+    <ImageView
+        android:id="@+id/ch01"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/ch0"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/ch3"
+        android:src="@drawable/star"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ch02"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/ch1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/ch01"
+        android:src="@drawable/star"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ch03"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/ch3"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/ch1"
+        android:src="@drawable/star"
+        android:visibility="gone" />
+
+</RelativeLayout>

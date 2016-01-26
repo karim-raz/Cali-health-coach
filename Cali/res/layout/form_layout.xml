@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#ecf0f1" >
+
+    <TextView
+        android:id="@+id/textlogged"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="54dp"
+        android:text="@string/form1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textlogged"
+        android:layout_toRightOf="@+id/textlogged" >
+
+        <RadioButton
+            android:id="@+id/male"
+            style="@style/RadioButtonAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/form2"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/female"
+            style="@style/RadioButtonAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/form3"
+            android:textSize="18dp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/EditText01"
+        style="@style/EditTextsplashprogress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView03"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignRight="@+id/editText1"
+        android:inputType="number"
+        android:textCursorDrawable="@drawable/cursor_red" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditText01"
+        android:layout_toRightOf="@+id/editText1"
+        android:text="@string/form9"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/ch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignLeft="@+id/TextView04"
+        android:text="@string/form7"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/EditText02"
+        style="@style/EditTextsplashprogress"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/TextView06"
+        android:layout_toRightOf="@+id/todayday"
+        android:ems="10"
+        android:inputType="number"
+        android:textCursorDrawable="@drawable/cursor_red" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditText02"
+        android:layout_alignLeft="@+id/todayday"
+        android:text="@string/form4"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18dp" />
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/button1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="17dp"
+        android:background="#1E88E5"
+        android:text="@string/form10"
+        android:textSize="18dp" >
+    </com.gc.materialdesign.views.ButtonRectangle>
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/todayday"
+        android:layout_below="@+id/todayday"
+        android:layout_marginTop="24dp"
+        android:text="@string/form8"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        style="@style/EditTextsplashprogress"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/todayday"
+        android:layout_alignLeft="@+id/EditText02"
+        android:layout_alignRight="@+id/EditText02"
+        android:ems="10"
+        android:inputType="number"
+        android:textCursorDrawable="@drawable/cursor_red" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/todayday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textlogged"
+        android:layout_below="@+id/EditText02"
+        android:layout_marginTop="20dp"
+        android:text="@string/form6"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditText02"
+        android:layout_alignRight="@+id/button1"
+        android:text="@string/form5"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18dp" />
+
+</RelativeLayout>

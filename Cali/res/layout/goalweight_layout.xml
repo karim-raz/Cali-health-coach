@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:id="@+id/weight1125"
+    >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ch01"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/arrowright" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:layout_toRightOf="@+id/ch01"
+        android:background="#1E88E5"
+        android:gravity="center_horizontal"
+        android:padding="2dp" >
+
+        <com.dafruits.android.library.widgets.ExtendedListView
+            xmlns:dafruits="http://schemas.android.com/apk/res/com.andy.cali"
+            android:id="@+id/weightlist"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:background="#ffffff"
+            android:choiceMode="singleChoice"
+            android:divider="@color/blue"
+            android:dividerHeight="1dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_horizontal"
+            android:scrollbars="none"
+            dafruits:scrollBarPanel="@layout/scrollbarpanel" >
+        </com.dafruits.android.library.widgets.ExtendedListView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/goal12"
+        
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#1E88E5"
+        android:textSize="27dp" />
+
+    <ImageView
+        android:id="@+id/ch01"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:layout_marginTop="74dp"
+        android:src="@drawable/arrowleft" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/goal13"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#1E88E5"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/index"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_alignRight="@+id/TextView01"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/a9" />
+
+</RelativeLayout>

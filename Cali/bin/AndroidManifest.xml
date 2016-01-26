@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.andy.cali"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="20" />
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="com.andy.application.ParseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logoapp"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActivityTheme" >
+
+      
+        <activity
+            android:name="com.andy.cali.activity.ContainerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity> 
+      
+        <activity
+            android:name="com.andy.cali.activity.SplashScreenActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.andy.cali.activity.FormActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.andy.cali.activity.ConnectActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="\ 1399370653695026" />
+
+        <provider
+            android:name="com.facebook.NativeAppCallContentProvider"
+            android:authorities="com.facebook.app.NativeAppCallContentProvider355198514515820"
+            android:exported="true" />
+
+        <receiver android:name="com.andy.cali.HelloFacebookBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="com.facebook.platform.AppCallResultBroadcast" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" />
+        <activity
+            android:name="com.andy.cali.activity.GoalWeightActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.andy.cali.activity.GoalWeight2Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.andy.cali.activity.LogDietsfirstActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.andy.cali.activity.StepsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.andy.cali.activity.LogDietsSecondActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.andy.cali.activity.FinalizeLogActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.andy.cali.activity.SetPreferenceActivity"
+            >
+        </activity>
+        <activity
+            android:name="com.andy.cali.activity.TipsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.TranslucentActionBar" >
+        </activity>
+
+        <service android:name="com.andy.utils.StepService" />
+    </application>
+
+</manifest>

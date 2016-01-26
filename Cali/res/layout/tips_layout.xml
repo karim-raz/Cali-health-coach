@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/windowBackground"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/titletips1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:padding="15dp"
+        android:text=""
+        android:textColor="#1E88E5"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/desctips1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:padding="15dp"
+        android:text=""
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/titletips2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:padding="15dp"
+        android:text=""
+        android:textColor="#1E88E5"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/desctips2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:padding="15dp"
+        android:text=""
+        android:textSize="15sp" />
+     <TextView
+        android:id="@+id/titletips3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:padding="15dp"
+        android:text=""
+        android:textColor="#1E88E5"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/desctips3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:padding="15dp"
+        android:text=""
+        android:textSize="15sp" />
+
+</LinearLayout>

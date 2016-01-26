@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="370dp"
+ 
+   >
+       
+        <ListView
+            android:id="@+id/listc"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_above="@+id/canc"
+            android:layout_below="@+id/typec"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:dividerHeight="1dp"
+            android:scrollbars="none" >
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/typec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/titlec"
+            android:layout_below="@+id/titlec"
+            android:layout_marginTop="15dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <com.gc.materialdesign.views.ButtonFlat
+            android:id="@+id/canc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/listc"
+            android:background="#1E88E5"
+            android:text="Cancel" >
+        </com.gc.materialdesign.views.ButtonFlat>
+
+        <TextView
+            android:id="@+id/titlec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="16dp"
+            android:text="Activate Internet Connexion?"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000" />
+
+</RelativeLayout>

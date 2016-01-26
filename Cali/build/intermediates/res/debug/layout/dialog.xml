@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:padding="32dp">
+    
+    <LinearLayout
+        android:id="@+id/contentDialog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background"
+        android:orientation="vertical"
+        android:padding="24dp" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Error"
+            android:layout_marginBottom="24dp"  
+            android:textColor="#000"                   
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Internet Connection Detected"
+            android:layout_marginBottom="24dp"  
+            android:textColor="#000"/>
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="right">
+        
+        <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000"
+                android:text="cancel" />
+        <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/button_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#1E88E5"
+                android:text="Settings" />
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>
+<!-- From: file:/E:/Chi/4SIM1/Android/Workspace_Cali/MaterialDesign/res/layout/dialog.xml --><!-- From: file:/E:/Chi/4SIM1/Android/Workspace_Cali/Cali/build/intermediates/exploded-aar/Workspace_Cali/MaterialDesign/unspecified/res/layout/dialog.xml -->

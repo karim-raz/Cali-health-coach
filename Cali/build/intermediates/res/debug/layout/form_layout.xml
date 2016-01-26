@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf0f1" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+       
+        android:layout_marginTop="54dp"
+        android:text="I&apos;m A :"
+        android:layout_marginLeft="12dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1" >
+
+        <RadioButton
+            android:id="@+id/male"
+           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            style="@style/RadioButtonAppTheme"
+            android:checked="true"
+            android:text="Men" />
+
+        <RadioButton
+            android:id="@+id/female"
+           style="@style/RadioButtonAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Women" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/EditText01"
+        style="@style/EditTextsplashprogress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView03"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignRight="@+id/editText1"
+        
+        
+        android:textCursorDrawable="@drawable/cursor_red"
+        android:inputType="number" >
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditText01"
+        android:layout_toRightOf="@+id/editText1"
+        android:text="Kg"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignLeft="@+id/TextView04"
+        android:text="Cm"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditText02"
+        android:layout_alignLeft="@+id/button1"
+        android:text="Ys"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/EditText02"
+        style="@style/EditTextsplashprogress"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/TextView06"
+        android:layout_toRightOf="@+id/TextView01"
+        android:ems="10"
+        android:inputType="number" >
+
+        
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditText02"
+        android:layout_alignLeft="@+id/TextView01"
+        android:text="I Am:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16sp" />
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/button1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="17dp"
+        android:background="#1E88E5"
+        android:text="CONFIRM" >
+    </com.gc.materialdesign.views.ButtonRectangle>
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginTop="24dp"
+        android:text="I Weight:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        style="@style/EditTextsplashprogress"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignLeft="@+id/EditText02"
+        android:layout_alignRight="@+id/EditText02"
+        android:ems="10"
+        android:inputType="number" >
+
+   
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/EditText02"
+        android:layout_marginTop="20dp"
+        android:text="I Measure:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16sp" />
+
+</RelativeLayout><!-- From: file:/E:/Chi/4SIM1/Android/Workspace_Cali/Cali/res/layout/form_layout.xml -->

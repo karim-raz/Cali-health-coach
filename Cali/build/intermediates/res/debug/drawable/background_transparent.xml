@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item >
+        <shape android:shape="rectangle" >
+            <corners android:radius="2dp" />
+
+            <solid android:color="#00000000" />
+        </shape>
+    </item>
+
+</layer-list><!-- From: file:/E:/Chi/4SIM1/Android/Workspace_Cali/MaterialDesign/res/drawable/background_transparent.xml --><!-- From: file:/E:/Chi/4SIM1/Android/Workspace_Cali/Cali/build/intermediates/exploded-aar/Workspace_Cali/MaterialDesign/unspecified/res/drawable/background_transparent.xml -->

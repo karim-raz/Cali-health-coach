@@ -1,0 +1,77 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- The main content view -->
+
+    <RelativeLayout
+        android:id="@+id/lol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </RelativeLayout>
+    <!-- The navigation drawer -->
+
+    <LinearLayout
+        android:id="@+id/navdrawe1"
+        android:layout_width="308dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingBottom="5dp" >
+
+        <LinearLayout
+            android:id="@+id/header_drawer"
+            android:layout_width="308dp"
+            android:layout_height="150dp"
+            android:background="@drawable/drawerback"
+            android:orientation="vertical" >
+
+            <com.andy.utils.RoundedImageView
+                android:id="@+id/photo_g_plus"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/chi" />
+
+            <TextView
+                android:id="@+id/header_tv"
+                android:layout_width="308dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Chiheb Manai"
+                android:textColor="#ecf0f1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/header_tv2"
+                android:layout_width="308dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="manaichiheb02@gmail.com"
+                android:textColor="#ecf0f1" />
+        </LinearLayout>
+
+       
+
+            <uk.me.lewisdeane.lnavigationdrawer.NavigationListView
+                android:id="@+id/navdrawer"
+                android:layout_width="@dimen/navigation_drawer_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="#ffffff"
+                android:choiceMode="singleChoice"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="1dp"
+                android:drawSelectorOnTop="false" >
+            </uk.me.lewisdeane.lnavigationdrawer.NavigationListView>
+   
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

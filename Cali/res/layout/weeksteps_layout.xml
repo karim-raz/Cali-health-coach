@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical" >
+
+    <com.andy.utils.RippleBackground
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/contentd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+      
+        app:rb_color="#1E88E5"
+        app:rb_duration="3500"
+        app:rb_radius="25dp"
+        app:rb_rippleAmount="4"
+        app:rb_scale="6" >
+
+        <TextView
+            android:id="@+id/todayd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#1E88E5"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+
+        <com.andy.utils.RoundedImageView
+            android:id="@+id/Mypic1d"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cerclebleu" />
+
+        <TextView
+            android:id="@+id/textView2261d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/stepsvalued"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="34dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-light"
+            android:text=""
+            android:textColor="#1E88E5"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/stepsvalued"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2261d"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-light"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#1E88E5"
+            android:textSize="18dp" />
+    </com.andy.utils.RippleBackground>
+
+    <com.gc.materialdesign.views.ButtonFloatSmall
+        android:id="@+id/buttonFloat22d"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#1E88E5"
+        app:animate="true"
+        app:icon="@drawable/share" >
+    </com.gc.materialdesign.views.ButtonFloatSmall>
+
+</RelativeLayout>

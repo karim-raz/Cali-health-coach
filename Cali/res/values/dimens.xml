@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--
+         Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html
+    -->
+    <dimen name="textsize3">20sp</dimen>
+    <dimen name="textsize2">16sp</dimen>
+    <dimen name="textsize1">18sp</dimen>
+    <dimen name="marginleft1">18dp</dimen>
+     <dimen name="margintop3">18dp</dimen>
+    <dimen name="marginbottom2">14dp</dimen>
+    <dimen name="margintop2">20dp</dimen>
+    <dimen name="marginbottom3">5dp</dimen>
+    <dimen name="marginbottom1">20dp</dimen>
+    <dimen name="width1">70dp</dimen>
+    <dimen name="width3">60dp</dimen>
+    <dimen name="height1">60dp</dimen>
+    <dimen name="width2">20dp</dimen>
+    <dimen name="height2">80dp</dimen>
+     <dimen name="height3">20dp</dimen>
+    <dimen name="margingtop1">70dp</dimen>
+    <dimen name="margingtop2">18dp</dimen>
+    <dimen name="rippleStrokeWidth">2dp</dimen>
+    <dimen name="rippleRadius">64dp</dimen>
+    <dimen name="navigation_drawer_width">300dp</dimen>
+    <dimen name="step_pager_tab_width">32dp</dimen>
+    <dimen name="step_pager_tab_height">4dp</dimen>
+    <dimen name="step_pager_tab_spacing">4dp</dimen>
+
+</resources>

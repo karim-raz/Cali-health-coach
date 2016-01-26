@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/weights"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 
+    android:layout_marginTop="70dp"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editText13"
+        style="@style/EditTextsplashprogress"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:textCursorDrawable="@drawable/cursor_red"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/loool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText13"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/editText13"
+        android:fontFamily="sans-serif-light"
+        android:text="Kg"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#1E88E5"
+        android:textSize="27dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/datte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-light"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/log19992"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#1E88E5"
+        android:textSize="27dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/todaydayssss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText13"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/goal2222"
+        android:textSize="17dp" />
+
+</RelativeLayout>

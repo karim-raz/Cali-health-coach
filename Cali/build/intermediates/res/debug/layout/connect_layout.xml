@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf0f1"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Welcome To Cali"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#1E88E5" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_button"
+        android:layout_alignRight="@+id/login_button"
+        android:layout_below="@+id/login_button"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/google" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Your Calories Instructor"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#1E88E5"
+        android:textSize="20dp" />
+
+    <com.facebook.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        facebook:confirm_logout="false"
+        facebook:fetch_user_info="true" />
+
+</RelativeLayout><!-- From: file:/E:/Chi/4SIM1/Android/Workspace_Cali/Cali/res/layout/connect_layout.xml -->

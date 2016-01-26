@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ android:id="@+id/finalll"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listlogged"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:background="@drawable/dialog_background"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="220dp"
+        android:scrollbars="none" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/textlogged"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-light"
+        android:text="BreakFast"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#1E88E5"
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/datelogged"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textlogged"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-light"
+        android:text="December 2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="18dp" />
+
+    <com.gc.materialdesign.views.ButtonFloatSmall
+        android:id="@+id/more"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="#1E88E5"
+        materialdesign:icon="@drawable/add" >
+    </com.gc.materialdesign.views.ButtonFloatSmall>
+
+    <TextView
+        android:id="@+id/loool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/datelogged"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/final2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#1E88E5"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/maxl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loool"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-light"
+        android:text="Total"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="18dp" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf0f1" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ListView
+            android:id="@+id/list1"
+            
+            android:layout_width="match_parent"
+            android:layout_height="750dp"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            android:listSelector="@android:color/transparent" />
+    </RelativeLayout>
+
+    <!-- The navigation drawer -->
+
+    <ListView
+        android:id="@+id/navdrawer"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+    
+        android:choiceMode="singleChoice"
+        android:divider="#22000000"
+        android:dividerHeight="1dp"
+       
+     android:listSelector="@drawable/selected"
+        android:drawSelectorOnTop="false" >
+    </ListView>
+
+</android.support.v4.widget.DrawerLayout><!-- From: file:/E:/Chi/4SIM1/Android/Workspace_Cali/Cali/res/layout/container_layout.xml -->

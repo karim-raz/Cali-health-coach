@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout   
+    android:id="@+id/relativeLayout1"   
+    android:layout_width="fill_parent"   
+    android:layout_height="fill_parent"   
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:padding="5dip">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgThumbnail"
+        android:layout_toRightOf="@+id/imgThumbnail"
+        android:text="dd"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginLeft="5dp"
+        android:textColor="#1E88E5"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/imgThumbnail"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerInside" />
+       
+</RelativeLayout> <!-- From: file:/E:/Chi/4SIM1/Android/Workspace_Cali/Cali/res/layout/item_cont.xml -->
